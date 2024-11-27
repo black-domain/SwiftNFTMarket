@@ -1,0 +1,243 @@
+/** @format */
+.wkit-button {
+  // 钱包样式
+  color: #000;
+  background-color: #ffa360 !important;
+  border-radius: 0.6rem;
+}
+.flip-clock {
+  text-align: center;
+  perspective: 6.25rem;
+  margin: 1.25rem 0;
+  display: flex;
+  // justify-content: space-around;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.flip-clock__piece {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.flip-clock__slot {
+  font-size: 1vw;
+}
+
+@halfHeight: 0.72em;
+@borderRadius: 0.15em;
+
+.card {
+  display: block;
+  position: relative;
+  padding-bottom: @halfHeight;
+  font-size: 2vw;
+  line-height: 0.95;
+}
+
+.card__top,
+.card__bottom,
+.card__back::before,
+.card__back::after {
+  display: block;
+  height: @halfHeight;
+  color: #ccc;
+  background: #222;
+  padding: 0.25em 0.25em;
+  border-radius: @borderRadius @borderRadius 0 0;
+  backface-visiblity: hidden;
+  transform-style: preserve-3d;
+  width: 1.8em;
+  transform: translateZ(0);
+}
+
+.card__bottom {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: solid 1px #000;
+  background: #393939;
+  border-radius: 0 0 @borderRadius @borderRadius;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.card__bottom::after {
+  display: block;
+  margin-top: -@halfHeight;
+}
+
+.card__back::before,
+.card__bottom::after {
+  content: attr(data-value);
+}
+
+.card__back {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0%;
+  pointer-events: none;
+}
+
+.card__back::before {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.flip .card__back::before {
+  animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+
+.flip .card__back .card__bottom {
+  transform-origin: center top;
+  animation-fill-mode: both;
+  animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1); // 0.3s;
+}
+
+.apply-collection {
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Press Start 2P", cursive !important;
+  }
+
+  button.learn-more {
+    width: 22rem;
+    height: auto;
+  }
+
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    box-shadow: 0 0 5px 1px white;
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
+
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    overflow: inherit !important;
+  }
+
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    font-family: "Press Start 2P", cursive !important;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgba(255, 255, 255, 0.493);
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  button:hover .circle {
+    width: 100%;
+    box-shadow: 0 0 10px 2px white;
+  }
+
+  button:hover .button-text {
+    transform: translate(-1.7rem, 0);
+  }
+
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(18.7rem, 0);
+  }
+
+  button:active .circle .icon.arrow {
+    transform: translate(9.5rem, 0);
+    transition: all 0.3s;
+  }
+
+  button:active .circle {
+    transform: scale(0.9);
+    transition: all 0.3s;
+    box-shadow: 0 0 5px 0.5px white;
+  }
+
+  button:hover .button-text {
+    color: #fff;
+  }
+
+  button:active .button-text {
+    color: rgba(255, 255, 255, 0.459);
+  }
+}
+
+@keyframes flipBottom {
+  0%,
+  50% {
+    z-index: -1;
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  51% {
+    opacity: 0.99;
+  }
+  100% {
+    opacity: 0.99;
+    transform: rotateX(0deg);
+    z-index: 5;
+  }
+}
+.NftObjectId {
+  .echYxt:not(.sc-eKBdFk:focus-within).input_filled {
+    outline-color: #c0c0c0 !important;
+  }
+  input {
+    color: #fff;
+  }
+}

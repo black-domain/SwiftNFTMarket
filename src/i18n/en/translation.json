@@ -1,0 +1,24 @@
+{
+  "user": {
+    "home": "Home",
+    "explore": "Explore",
+    "create": "Create",
+    "theme": "Theme",
+    "sui": "Sui Connect"
+  },
+  "second": {
+    "auctions":"Live Auctions",
+    "more":"More Explore"
+  },
+  "third":{
+    "top" :"Top Collections"
+  },
+  "footer": {
+    "content":"A faster and safer multifunctional NFT trading market on SUI blockchain",
+    "company":"Company",
+    "withUs":"Connect with Swift-Market",
+    "creators":"Creators",
+    "collections":"Collections",
+    "mint":"Mint"
+  }
+}

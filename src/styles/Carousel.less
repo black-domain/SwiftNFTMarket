@@ -1,0 +1,117 @@
+.myCarousel {
+	margin: 0 -17.5rem;
+
+	.arco-carousel-card {
+		.arco-carousel-item-next {
+			transform: translateX(24.375rem);
+		}
+		.arco-carousel-item-prev {
+			transform: translateX(-82.5rem);
+		}
+	}
+  .arco-carousel-arrow > div{
+    width: 3rem;
+    height: 3rem;
+    svg{
+      font-size: 1.5rem;
+    }
+  }
+}
+// 卡片翻页动画
+
+@keyframes arco-carousel-card-bottom-to-middle {
+	from {
+		opacity: 0;
+		transform: translateX(24.375rem) translateZ(-6.25rem);
+    
+	}
+
+	to {
+		opacity: 0.4;
+		transform: translateX(24.375rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-middle-to-bottom {
+	from {
+		opacity: 0.4;
+		transform: translateX(-82.5rem) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(-82.5rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-top-to-middle {
+	from {
+		opacity: 1;
+		transform: translateX(-50%) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 0.4;
+		transform: translateX(-82.5rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-middle-to-top {
+	from {
+		opacity: 0.4;
+		transform: translateX(24.375rem) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(-50%) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-bottom-to-middle-reverse {
+	from {
+		opacity: 0;
+		transform: translateX(-82.5rem) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 0.4;
+		transform: translateX(-82.5rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-middle-to-bottom-reverse {
+	from {
+		opacity: 0.4;
+		transform: translateX(24.375rem) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(24.375rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-top-to-middle-reverse {
+	from {
+		opacity: 1;
+		transform: translateX(-50%) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 0.4;
+		transform: translateX(24.375rem) translateZ(0);
+	}
+}
+
+@keyframes arco-carousel-card-middle-to-top-reverse {
+	from {
+		opacity: 0.4;
+		transform: translateX(-82.5rem) translateZ(-6.25rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(-50%) translateZ(0);
+	}
+}

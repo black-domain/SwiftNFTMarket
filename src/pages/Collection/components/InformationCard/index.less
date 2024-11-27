@@ -1,0 +1,143 @@
+/** @format */
+
+.NFT-List-body {
+  min-height: 35vh;
+  margin-top: 4.75rem;
+  .NFT-List-head-img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    border: 3px solid #000;
+    position: absolute;
+    bottom: -3.5rem;
+    left: 1.5rem;
+  }
+  .QPpRB {
+    margin: 0 !important;
+  }
+  .NFT-List-head-card {
+    /* cahuahanncaaosxncaaosx *
+    /* 编组 21 */
+    font-family: AlibabaSans;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+      color: rgb(255, 255, 255);
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+      letter-spacing: 0px;
+      font-weight: 500;
+    }
+
+    h3 {
+      color: rgb(255, 255, 255);
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      letter-spacing: 0px;
+      margin-bottom: 1.5625rem;
+      font-weight: 500;
+    }
+
+    p {
+      line-height: 1.6875rem;
+    }
+
+    .NFT-List-head-card-cion {
+      margin-top: 1.25rem;
+      display: grid;
+      img {
+        margin-right: 1.25rem;
+        // width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .NFT-List-head-chart {
+    /* 矩形备份 19 */
+    display: flex;
+    flex-direction: column;
+    width:24rem;
+    height:21.3125rem;
+    background: rgb(23, 24, 26);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    .NFT-List-head-chart-span {
+      /* 编组 19 */
+      position: relative;
+      height: 2.5rem;
+      margin: 0rem 0rem 0rem 0rem;
+      span:nth-child(2) {
+        font-size: 1.625rem;
+        margin-left: 0.75rem;
+      }
+    }
+  }
+}
+.myChart {
+  position: relative;
+  display: flex;
+  padding: 0rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.NFT-List-h2 {
+  color: rgb(255, 255, 255);
+  font-family: AlibabaSans;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  letter-spacing: 0px;
+  margin-bottom: 1.625rem ;
+}
+.NFT-List {
+  margin-bottom: 1.625rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 五列 */
+  gap: 1.25rem; /* 间距 */
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(115, 134, 122);
+  --btn-bg-2: rgb(63, 43, 27);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}

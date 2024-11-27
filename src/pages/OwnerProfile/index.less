@@ -1,0 +1,370 @@
+/** @format */
+
+.PersonalDetails {
+  .PersonalDetails-div {
+    background: rgb(23, 24, 26);
+    height: 147px;
+    color: white;
+    display: flex;
+    padding: 0 17.5rem;
+    margin-bottom: 2rem;
+    > .aa {
+      &:hover {
+        > .uploadLogoOverLay {
+          display: flex;
+        }
+      }
+      > .uploadLogoOverLay {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    .tabs {
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  }
+  .MuiPaper-root {
+    .MuiTableCell-head {
+      border-bottom: none;
+    }
+    padding-top: 24px;
+    :first-child {
+      border-radius: 16px 0 0 16px !important;
+    }
+    :last-child {
+      border-radius: 0 16px 16px 0 !important;
+    }
+    th,
+    td {
+      border-bottom: 1px rgb(45, 47, 51) solid;
+    }
+  }
+}
+
+.MuiTableCell {
+  padding: 1.125rem 1.1875rem 1.1rem 1.8125rem;
+  background: rgb(23, 24, 26);
+  border-radius: 16px;
+  color: #fff;
+  .arco-table-cell-wrap-value {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    background: rgb(23, 24, 26);
+  }
+  thead {
+    background: rgb(9, 10, 10);
+  }
+  .arco-table-td {
+    background: rgb(23, 24, 26);
+  }
+  .arco-table-border .arco-table-th:first-child,
+  .arco-table-border .arco-table-td:first-child {
+    border-left: none;
+  }
+  .arco-table-td {
+    border-bottom: 1px solid rgb(45, 47, 51);
+    line-height: 3.625rem;
+    padding: 0;
+  }
+  .arco-table-th {
+    border: none !important;
+    background: rgb(9, 10, 10);
+    color: rgb(255, 255, 255);
+  }
+  .arco-table-container {
+    border: 0;
+  }
+  .arco-table-border .arco-table-container::before {
+    border-bottom: 1px solid rgb(45, 47, 51);
+  }
+  .arco-pagination-item-active {
+    background-color: #4e4e4e;
+    color: #fff;
+  }
+  .arco-table-sorter-icon.arco-table-sorter-icon-active svg {
+    color: #21bf96;
+  }
+  .arco-table-th-item {
+    line-height: 35px;
+  }
+  .arco-table-th:first-of-type {
+    border-radius: 16px 0 0 16px !important;
+  }
+  .arco-table-th:last-of-type {
+    border-radius: 0 16px 16px 0 !important;
+  }
+}
+
+.picp {
+  position: relative;
+}
+.picc {
+  bottom: -3.375rem !important; /* 将子元素定位到父元素下方 */
+  height: 3.375rem;
+  // backdrop-filter: blur(206px);
+  opacity: 0;
+  transition: all 0.3s ease-out; /* 使用 transition 实现过渡效果 */
+}
+
+.picp:hover .picc {
+  /* 当鼠标悬停在父元素上时触发 */
+  bottom: 0; /* 将子元素移回父元素中 */
+  opacity: 1; /* 改变子元素透明度，使其淡入 */
+  transform: translateY(-100%);
+}
+
+.owner_img {
+  margin: 0 -17.5rem;
+}
+
+.addBorder {
+  border: none;
+  box-sizing: border-box;
+  margin: 0px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  outline: #a8afb7 solid 2px;
+  border-radius: 16px;
+  display: grid;
+  min-height: fit-content;
+  padding: 1px;
+  position: relative;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  min-width: 50rem !important;
+  background-color: #f6f5fa !important;
+}
+
+.inp-but {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .arco-input-group-addbefore,
+  .arco-input-group-addafter {
+    display: none;
+  }
+  .arco-input-inner-wrapper {
+    background: none;
+    .arco-input {
+      color: #000;
+    }
+  }
+  .arco-input-inner-wrapper:focus,
+  .arco-input-inner-wrapper.arco-input-inner-wrapper-focus {
+    border-color: #fff !important;
+  }
+}
+.ts {
+  transition: transform 0.5s ease !important;
+  transform: translateX(8.5rem) !important;
+}
+.ty {
+  transform: translateX(0rem) !important;
+  transition: transform 0.5s ease !important;
+}
+
+.MuiDialog-root {
+  width: 100% !important;
+  .MuiPaper-root {
+    width: 60rem;
+  }
+}
+.collpaseNft {
+  .arco-collapse-item-content-box {
+    background: #000;
+    padding: 0.125rem;
+  }
+  .arco-collapse-item-active > .arco-collapse-item-header {
+    background: #000000;
+    color: #a8afb7;
+    border-bottom: none;
+  }
+  .arco-collapse-item-header {
+    background: #000000;
+    color: #a8afb7;
+    border-bottom: none;
+    margin: 0.5rem 0;
+  }
+  .arco-collapse-item-header {
+    min-width: 36rem;
+  }
+}
+.inp-butA {
+  display: flex;
+  align-items: center;
+  .arco-input-group-addbefore,
+  .arco-input-group-addafter {
+    display: none;
+  }
+  .arco-input-inner-wrapper {
+    padding: 0;
+    background: none;
+    .arco-input {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+  .arco-input-inner-wrapper:focus,
+  .arco-input-inner-wrapper.arco-input-inner-wrapper-focus {
+    border: none;
+  }
+  .arco-input-group-wrapper .arco-input-inner-wrapper {
+    height: 1.6875rem !important;
+  }
+  .arco-input {
+    text-align: left;
+  }
+}
+.collpaseNft {
+  .arco-collapse-item-header-title {
+    width: 100%;
+  }
+  .arco-collapse arco-collapse-border {
+    width: 100%;
+  }
+  .arco-collapse-item {
+    width: 100% !important;
+  }
+}
+
+// item 选项卡
+.raidioBut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .tabs {
+    display: flex;
+    position: relative;
+    background-color: #232323;
+    border: 2px solid #323232;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    border-radius: 0.875rem;
+    display: flex;
+    height: 4rem;
+    width: 36.2rem;
+  }
+
+  .tabs * {
+    z-index: 2;
+  }
+  .container {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .container input[type="radio"] {
+    display: none;
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 12rem;
+    color: #b3b2b9;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+  }
+
+  .container input[type="radio"]:checked + label {
+    color: #b3b2b9;
+  }
+
+  .container input[id="radio-1"]:checked ~ .glider {
+    transform: translateX(0);
+  }
+
+  .container input[id="radio-2"]:checked ~ .glider {
+    transform: translateX(100%);
+  }
+
+  .container input[id="radio-3"]:checked ~ .glider {
+    transform: translateX(200%);
+  }
+
+  .glider {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 12rem;
+    background-color: #1b1b1f;
+    z-index: 1;
+    border-radius: 1rem;
+    transition: 0.25s ease-out;
+  }
+
+  @media (max-width: 700px) {
+    .tabs {
+      transform: scale(0.6);
+    }
+  }
+
+  .arco-btn-text {
+    height: 4rem;
+    width: 18rem;
+    background-color: #232323;
+    border: 2px solid #323232;
+    border-radius: 1rem;
+    color: #b3b2b9;
+  }
+  .arco-space-item {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .arco-btn-text:not(.arco-btn-disabled):not(.arco-btn-loading):hover {
+    color: #b3b2b9;
+    background-color: #1b1b1f;
+    border: 2px solid #323232;
+  }
+
+  
+
+
+  .MuiToggleButtonGroup-root {
+    background-color: #232323;
+    border: 2px solid #323232;
+    border-radius: 1rem;
+    height: 4rem;
+    .MuiButtonBase-root{
+      color: #b3b2b9;
+      font-weight: 600;
+    }
+  }
+ 
+  .css-ueukts-MuiButtonBase-root-MuiToggleButton-root.Mui-selected{
+    background-color: #1b1b1f;
+  }
+}
+
+// 下拉框
+.dropdown-demo > .arco-btn {
+  padding: 0 8px;
+  font-weight: normal;
+}
+
+.arco-dropdown-menu{
+  background-color:#232323 ;
+  border: 2px solid #323232;
+  .arco-dropdown-menu-item{
+    color: #b3b2b9;
+  }
+  .arco-dropdown-menu-item:hover, .arco-dropdown-menu-pop-header:hover{
+    background-color: #080809;
+  }
+}

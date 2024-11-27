@@ -1,0 +1,242 @@
+/** @format */
+
+.check {
+  position: relative;
+  background: linear-gradient(90deg, #f19af3, #f099b5);
+  line-height: 0;
+  font-size: 25px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after {
+  appearance: none;
+  display: inline-block;
+  font-size: inherit;
+  border-radius: 1em;
+  border: 0;
+  transition: 0.35s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.check {
+  appearance: none;
+  display: inline-block;
+  border-radius: 1em;
+  border: 0;
+  transition: 0.35s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.check label {
+  width: 2.2em;
+  height: 1em;
+  background: #d7d7d7;
+  overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+  width: 0.8em;
+  height: 0.8em;
+  top: 0.1em;
+  left: 0.1em;
+  background: linear-gradient(45deg, #dedede, #ffffff);
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+  left: 1.3em;
+}
+
+.check input[type="checkbox"]:checked + label {
+  background: #d69361;
+}
+
+.check label::before,
+.check label::after {
+  content: "· ·";
+  position: absolute;
+  overflow: hidden;
+  left: 0.5em;
+  top: 0.5em;
+  height: 1em;
+  letter-spacing: -0.04em;
+  color: #9b9b9b;
+  font-family: "Times New Roman", serif;
+  z-index: 2;
+  font-size: 0.6em;
+  border-radius: 0;
+  transform-origin: 0 0 -0.5em;
+  backface-visibility: hidden;
+}
+
+.check label::after {
+  content: "?";
+  top: 0.65em;
+  left: 0.6em;
+  height: 0.1em;
+  width: 0.35em;
+  font-size: 0.2em;
+  transform-origin: 0 0 -0.4em;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+  left: 2.55em;
+  top: 0.4em;
+  line-height: 0.1em;
+  transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+  height: 0.16em;
+  top: 0.55em;
+  left: 2.6em;
+  font-size: 0.6em;
+  line-height: 0;
+}
+.NFT-List-h2 {
+  margin: 12px 12px;
+}
+.NFT-List-h2:hover{
+  color: orange;
+}
+// .collection-nft-1 {
+//   grid-template-columns: repeat(4, 1fr) !important;
+// }
+.card2 {
+  .mb {
+    margin: 1rem 0;
+  }
+  .arco-select .arco-select-view {
+    background-color: #212936;
+  }
+}
+
+.ComboBox {
+  //下拉菜单
+  position: relative;
+  width: 100%;
+  background: #1f2937;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  > span {
+    font-weight: 600;
+  }
+}
+
+.ComboBox-content {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background: #1f2937;
+  height: 20rem;
+  top: -0.5rem;
+  border: 1px solid #374151;
+  padding: 1rem 0.8rem;
+  z-index: 2;
+  position: relative;
+}
+
+/* 容器元素，它会包含滚动条 */
+.container {
+  height: 100%;
+  overflow: auto; /* 确保内容太长时出现滚动条 */
+  padding: 1rem;
+}
+
+/* 滚动条的基本样式 */
+.container::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* 滚动条轨道的样式 */
+.container::-webkit-scrollbar-track {
+  background-color: #313da7;
+}
+
+/* 滚动条滑块的样式 */
+.container::-webkit-scrollbar-thumb {
+  background-color: #313da7;
+}
+
+/* 鼠标悬停在滚动条上时滑块的样式 */
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.solid-bol {
+  border: 1px solid #2c3545;
+}
+
+
+/* Hide the default checkbox */
+.containera input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.containera {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  border: 2px solid #414141;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.containera input:hover ~ .checkmark {
+  border: 2px solid #0974f1;
+}
+
+/* When the checkbox is checked */
+.containera input:checked ~ .checkmark {
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+  border: 2px solid #0974f1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containera input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containera .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,37 @@
+{
+  "id": "3713065",
+  "name": "NFT",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6151209",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e7ed",
+      "unicode_decimal": 59373
+    },
+    {
+      "icon_id": "8288959",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e85c",
+      "unicode_decimal": 59484
+    },
+    {
+      "icon_id": "9818324",
+      "name": "爱心",
+      "font_class": "aixin1",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "16618555",
+      "name": "no_eye",
+      "font_class": "no_eye",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    }
+  ]
+}

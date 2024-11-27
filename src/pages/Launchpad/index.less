@@ -1,0 +1,63 @@
+/** @format */
+
+// '& .flip-clock__piece': {
+//     m: "0 .875rem",
+// },
+// '& .flip-clock__card': {
+//     fontSize: "1.25rem",
+//     color: "rgb(255, 163, 97)",
+// },
+// '& .flip-clock__slot': {
+//     fontSize: ".875rem"
+// },
+// '& .filp-clock': {
+//     ' .flip-clock__piece': {
+//         m: "0 .875rem",
+//     },
+//     ' .flip-clock__card': {
+//         fontSize: "1.25rem",
+//         color: "rgb(255, 163, 97)",
+//     },
+//     ' .flip-clock__slot': {
+//         fontSize: ".875rem"
+//     },
+// }
+
+.launchpad-timeclock {
+  .flip-clock {
+    margin: 0 !important;
+  }
+  .flip-clock__piece {
+    margin: 0 0.875rem !important;
+  }
+
+  .flip-clock__card {
+    font-size: 1.25rem !important;
+    .card__top {
+      color: rgb(255, 163, 97) !important;
+    }
+    .card__bottom {
+      color: rgb(255, 163, 97) !important;
+    }
+    .card__back::before {
+      color: rgb(255, 163, 97) !important;
+    }
+  }
+  .flip-clock__slot {
+    font-size: 0.875rem !important;
+  }
+}
+.Typography-text {
+  .arco-typography {
+    color: #e0e0e0 !important;
+    margin: 2.2rem 0;
+  }
+}
+.img-1 {
+  border-radius: 50%;
+  transition: width 0.3s ease;
+}
+
+.img-1:hover {
+  width: 4.5rem !important;
+}

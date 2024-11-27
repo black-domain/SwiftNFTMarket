@@ -1,0 +1,79 @@
+/** @format */
+
+.menuList_container {
+  /* 矩形 */
+  width: 100%;
+  // background: rgb(23, 24, 26);
+  border-radius: 16px;
+  // padding: 1.25rem;
+  margin: 0 0 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 8px;
+  text-align: center;
+
+  .arco-tag-content {
+    text-align: center;
+    svg {
+      margin-right: 0.2rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  .arco-tag {
+    border: 1px solid #232427;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+  }
+
+  // 列表
+
+  .tag {
+    color: #fff;
+    font-family: AlibabaSans;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    // --bg: #000;
+    // --hover-bg: #ff90e8;
+    // --hover-text: #000;
+    // color: #fff;
+    // border-radius: 4px;
+    // padding: 0.8em 2em;
+    // transition: 0.2s;
+
+    // &:hover {
+    // 	color: var(--hover-text);
+    // 	transform: translate(-0.25rem,-0.25rem);
+    // 	background: var(--hover-bg);
+    // 	box-shadow: 0.25rem 0.25rem var(--bg);
+    // }
+
+    // &:active {
+    // 	transform: translate(0);
+    // 	box-shadow: none;
+    // }
+  }
+  .arco-tag-checked {
+    background: transparent;
+    border: 1px solid rgb(255, 163, 97);
+    color: rgb(255, 163, 97);
+    border-radius: 8px;
+  }
+  .arco-tag-checkable.arco-tag-checked:hover {
+    border: 1px solid rgb(255, 163, 97);
+  }
+  .arco-tag-checkable:hover {
+    background: transparent;
+    color: rgb(255, 163, 97);
+    border-radius: 8px;
+    svg path {
+      fill: #ffa361;
+    }
+  }
+}
+.shopList_container {
+  margin-bottom: 5rem;
+}
